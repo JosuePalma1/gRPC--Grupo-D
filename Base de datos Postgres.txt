@@ -1,0 +1,15 @@
+
+DB_HOST=localhost/ 127.0.0.1
+DB_PORT=5432
+DB_NAME=grpc
+
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE
+);
+
+INSERT INTO users (id, name, email)
+VALUES (1, 'josue', 'josue@gmai.com');
+
+Select * from users;
